@@ -19,6 +19,11 @@ body {
   background-color: c.$theme-color-5;
 }
 
+a:link, a:visited {
+  color: c.$theme-color-1;
+  text-decoration: none;
+}
+
 .content-row {
   max-width: 1200px;
   min-width: 480px;
@@ -50,3 +55,4 @@ body {
   flex: 1 1 calc(66% - 48px);
   min-width: 340px;
 }
+

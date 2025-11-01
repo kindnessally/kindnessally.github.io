@@ -1,13 +1,18 @@
 <div class="row-toolbar">
   <div class="content-row">
     <mat-toolbar>
-      <span><img src="images/handshake.png" width="72" height="72" /></span>
+      <span>
+        <a routerLink="">
+          <img src="images/handshake.png" width="72" height="72" />
+        </a>
+      </span>
       <span><h1>Kindness Alliance</h1></span>
       <span class="separator"></span>
-      <button mat-button>Activities</button>
-      <button mat-button>Donate</button>
+      <button mat-button routerLink="donate">Donate</button>
       <button matIconButton>
-        <mat-icon>mail</mat-icon>
+        <a href="mailto:contact@kindnessally.org">
+          <mat-icon>mail</mat-icon>
+        </a>
       </button>
     </mat-toolbar>
   </div>
