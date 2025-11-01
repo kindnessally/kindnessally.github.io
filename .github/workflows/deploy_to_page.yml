@@ -21,6 +21,7 @@ jobs:
           node-version: '24'
       - run: npm install -g @angular/cli
       - run: npm ci
+      - run: ng lint
       - run: ng build --configuration production
       - name: Copy 404.html
         run: cp dist/kindnessally/browser/index.html dist/kindnessally/browser/404.html
