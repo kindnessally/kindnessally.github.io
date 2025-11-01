@@ -8,9 +8,9 @@ on:
 
 jobs:
   build-and-deploy:
-    environment:
-      name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
+    #environment:
+    #  name: github-pages
+    #  url: ${{steps.deployment.outputs.page_url}}
     permissions:
       pages: write
       id-token: write
