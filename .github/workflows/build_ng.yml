@@ -5,7 +5,7 @@ on:
     branches:
       - '**'
       - '!main'
-      - '!seattle'
+      - '!page'
 
 jobs:
   build_angular_app:
