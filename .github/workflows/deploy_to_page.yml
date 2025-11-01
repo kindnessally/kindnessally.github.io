@@ -4,12 +4,10 @@ on:
   push:
     branches:
       - main
+      - page
 
 jobs:
   build-and-deploy:
-    environment:
-      name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
     permissions:
       pages: write
       id-token: write
@@ -24,10 +22,11 @@ jobs:
       - run: npm install -g @angular/cli
       - run: npm ci
       - run: ng build --configuration production
+      - name: Copy 404.html
+        run: cp dist/kindnessally/browser/index.html dist/kindnessally/browser/404.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist/kindnessally/browser
       - name: Deploy to Github pages
-        id: deployment
         uses: actions/deploy-pages@v4

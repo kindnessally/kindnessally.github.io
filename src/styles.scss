@@ -13,8 +13,6 @@ html {
   ));
 }
 
-
-
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -22,7 +20,7 @@ body {
 }
 
 .content-row {
-  max-width: 1120px;
+  max-width: 1200px;
   min-width: 480px;
   margin: 0 auto;
 }
@@ -36,20 +34,19 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0px auto;
-  //padding: 24px 0px;
 }
 
 .half-block {
   flex: 1 1 calc(50% - 48px);
-  min-width: 300px;
+  min-width: 340px;
 }
 
 .third-block {
   flex: 1 1 calc(33% - 48px);
-  min-width: 300px;
+  min-width: 340px;
 }
 
 .two-thirds-block {
   flex: 1 1 calc(66% - 48px);
-  min-width: 300px;
+  min-width: 340px;
 }

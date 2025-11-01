@@ -5,6 +5,7 @@ on:
     branches:
       - '**'
       - '!main'
+      - '!page'
 
 jobs:
   build_angular_app:
