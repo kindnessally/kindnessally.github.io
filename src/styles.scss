@@ -1,0 +1,55 @@
+@use "@angular/material" as mat;
+@use "./theme_color.scss" as c;
+
+html {
+  @include mat.theme((
+    color: (
+      primary: mat.$azure-palette,
+      tertiary: mat.$orange-palette,
+      theme-type: light,
+    ),
+    typography: Roboto,
+    density: 0
+  ));
+}
+
+
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: c.$theme-color-5;
+}
+
+.content-row {
+  max-width: 1120px;
+  min-width: 480px;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 24px;
+}
+
+.block-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px auto;
+  //padding: 24px 0px;
+}
+
+.half-block {
+  flex: 1 1 calc(50% - 48px);
+  min-width: 300px;
+}
+
+.third-block {
+  flex: 1 1 calc(33% - 48px);
+  min-width: 300px;
+}
+
+.two-thirds-block {
+  flex: 1 1 calc(66% - 48px);
+  min-width: 300px;
+}

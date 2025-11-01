@@ -1,0 +1,20 @@
+@use "../theme_color.scss" as c;
+
+.row-one h1 {
+  color: c.$theme-color-1;
+}
+
+.row-two {
+  background-color: c.$theme-color-4;
+  color: white;
+}
+
+.row-two mat-card {
+  background-color: transparent;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.row-two mat-card-content {
+  padding: 0px;
+}
