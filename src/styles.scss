@@ -26,7 +26,6 @@ a:link, a:visited {
 
 .content-row {
   max-width: 1200px;
-  min-width: 480px;
   margin: 0 auto;
 }
 
@@ -43,16 +42,16 @@ a:link, a:visited {
 
 .half-block {
   flex: 1 1 calc(50% - 48px);
-  min-width: 340px;
+  min-width: 320px;
 }
 
 .third-block {
   flex: 1 1 calc(33% - 48px);
-  min-width: 340px;
+  min-width: 320px;
 }
 
 .two-thirds-block {
   flex: 1 1 calc(66% - 48px);
-  min-width: 340px;
+  min-width: 320px;
 }
 
