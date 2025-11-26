@@ -3,24 +3,30 @@
 .row-toolbar {
   background-color: c.$theme-color-3;
 }
+
 .row-toolbar mat-toolbar {
   background-color: transparent;
   height: 80px;
 }
+
 .row-toolbar .separator {
   flex: 1 1 auto;
 }
+
 .row-toolbar button, .row-toolbar span {
   margin-right: 16px;
 }
+
 .row-body {
   background-color: white;
   font-size: 125%;
   min-height: 480px;
 }
+
 .row-footer {
   color: white;
 }
+
 .row-footer a:link, .row-footer a:visited {
   color: c.$theme-color-2;
 }
