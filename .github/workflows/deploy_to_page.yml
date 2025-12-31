@@ -26,7 +26,7 @@ jobs:
       - name: Copy 404.html
         run: cp dist/kindnessally/browser/index.html dist/kindnessally/browser/404.html
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: dist/kindnessally/browser
       - name: Deploy to Github pages
