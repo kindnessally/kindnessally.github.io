@@ -50,7 +50,7 @@ angular.json      node_modules       public     tsconfig.app.json
 ...
 ```
 
-### Buidl and run
+### Build and run
 
 The application can be built, tested and run with `ng` command.
 
